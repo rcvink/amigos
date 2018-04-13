@@ -14,6 +14,7 @@
     "pug": "2.0.0-beta11"
   },
   "devDependencies": {
+    "chai": "^4.1.2",
     "mocha": "^5.1.0"
   }
 }
