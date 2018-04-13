@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/rcvink/amigos/issues"
   },
-  "homepage": "https://github.com/rcvink/amigos#readme"
+  "homepage": "https://github.com/rcvink/amigos#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
 }
