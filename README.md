@@ -30,9 +30,30 @@ I want to view others' profiles
 So I can stalk others.
 ```
 
+### v2
+
+```
+As an amigo,
+I want to write posts
+So I can share my controversial thoughts.
+
+As an amigo,
+I want to see others' posts
+So I can form an opinion on them.
+```
+
 ## Stack
 
-1. Node.js
-2. Express.js
-3. NPM
-4. passport
+For the app:
+1. Node - back end
+1. React - front end
+1. Express - web framework
+1. passport - user authentification
+
+For development:
+1. NPM - package management
+
+For testing:
+1. Mocha - testing framework
+1. Chai - assertions
+1. Phantom - headless browser
