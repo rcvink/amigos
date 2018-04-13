@@ -1,0 +1,19 @@
+{
+  "name": "amigos",
+  "version": "1.0.0",
+  "description": "Amigos is a WIP social networking site.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rcvink/amigos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rcvink/amigos/issues"
+  },
+  "homepage": "https://github.com/rcvink/amigos#readme"
+}
