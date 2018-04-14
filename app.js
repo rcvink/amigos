@@ -5,9 +5,33 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 require('reflect-metadata');
 var typeorm = require('typeorm');
+var amigo = require('./entity/amigo');
 
 // create connection
-typeorm.createConnection();
+typeorm.createConnection({
+    type: "postgres",
+    host: "localhost",
+    port: 5433,
+    username: "postgres",
+    password: "postgres",
+    database: "amigos",
+    synchronize: true,
+    entitySchemas: [
+        require('./entity/amigo')
+    ]
+})
+    .then(function (connection) {
+        var myAmigo = {
+            name: "Test name",
+            email: "test@email.com",
+            password: "my password"
+        };
+        var amigoRepository = connection.getRepository("amigo");
+        amigoRepository.save(myAmigo)
+            .then(function(savedAmigo) {
+                console.log("Amigo has been saved: ", savedAmigo);
+            });
+    });
 
 // require routers
 var indexRouter = require('./routes/index');
