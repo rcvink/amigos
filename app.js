@@ -4,6 +4,10 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 require('reflect-metadata');
+var typeorm = require('typeorm');
+
+// create connection
+typeorm.createConnection();
 
 // require routers
 var indexRouter = require('./routes/index');
