@@ -11,9 +11,9 @@ var amigo = require('./entity/amigo');
 typeorm.createConnection({
     type: "postgres",
     host: "localhost",
-    port: 5433,
-    username: "postgres",
-    password: "postgres",
+    port: 5432,
+    username: "amigos",
+    password: "amigos",
     database: "amigos",
     synchronize: true,
     entitySchemas: [
