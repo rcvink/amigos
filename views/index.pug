@@ -2,4 +2,16 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  p Welcome to #{title}!
+
+  form(method='POST' action='/users')
+      div.form-group
+          label(for='username') Username:
+          input#username.form-control(type='text', name='name')
+      div.form-group
+          label(for='password') Password:
+          input#password.form-control(type='password', name='password')
+      div.form-group
+          label(for='password-confirm') Confirm Password:
+          input#password-confirm.form-control(type='password', name='password-confirm')
+      button.btn.btn-primary(type='submit') Sign up
