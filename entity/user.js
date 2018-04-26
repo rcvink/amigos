@@ -1,12 +1,12 @@
 module.exports = {
-    name: "amigo",
+    name: "user",
     columns: {
         id: {
             primary: true,
             type: "int",
             generated: true
         },
-        name: {
+        username: {
             type: "varchar"
         },
         email: {
